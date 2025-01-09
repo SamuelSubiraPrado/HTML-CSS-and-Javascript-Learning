@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Imagem</title>
+
+        <!-- Leva o css para o código, no arquivo css, está alterando a cor do background -->
+        <link rel="stylesheet" href="assets/style.css/style.css">
+
+        <style>
+            /* Classes são acessadas usando um ponto antes .class */
+            .fundo{
+                /* Isso faz com que o fundo seja uma imagem, aqui ela é pega inteira*/
+                background-image: url(assets/imagem/OIP.jfif);
+                /* Centraliza a imagem */
+                background-position: center center;
+                /* tamanho imagem */
+                height: 500px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            /* Para cessar id's utilizamos # antes */
+            #font{
+                /* Alterar o tamanho */
+                font-size: 50px;
+                /* Alterando a cor desse id */
+                color: chocolate;
+            }
+        </style>
+    </head>
+    <body>
+        </div>
+            <h1>Imagem</h1>
+            <h2>Tag img</h2>
+            <!--O texto alternativo irá aparecer se a img não for carregada corretamente, ex: erro de internet. -->
+            <img src="assets/Imagem/montanha.jpg" alt="Paisagem com montanhas na região do Alasca">
+        </div>
+
+        </div>
+            <figure>
+                <!--O texto alternativo irá aparecer se a img não for carregada corretamente, ex: erro de internet. -->
+                <img src="assets/Imagem/montanha.jpg" alt="Paisagem com montanhas na região do Alasca">
+                <figcaption>Informação da figura</figcaption>
+            </figure>
+        </div>
+
+        <div>
+            <h2 style="background-color: brown;">Título</h2>
+            <!-- Lorem é usado pra preencher textos aleatórios, basta digita Lorem -->
+            <p>Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. Laboriosam exercitationem 
+                totam eius minima rem commodi. Ratione aperiam at, 
+                laboriosam autem asperiores accusantium officia, ducimus 
+                itaque ut dolore praesentium optio repudiandae!</p>
+        </div>
+
+        <div>
+            <h2>Título</h2>
+            <!-- Lorem é usado pra preencher textos aleatórios, basta digita Lorem -->
+            <p>Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. Laboriosam exercitationem 
+                totam eius minima rem commodi. Ratione aperiam at, 
+                laboriosam autem asperiores accusantium officia, ducimus 
+                itaque ut dolore praesentium optio repudiandae!</p>
+        </div>
+
+        <!--A cor está sendo alterada apenas para os conteúdos da div -->
+        <div class="fundo">
+            <h2>Título</h2>
+            <!-- Lorem é usado pra preencher textos aleatórios, basta digita Lorem -->
+            <p>Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. Laboriosam exercitationem 
+                totam eius minima rem commodi. Ratione aperiam at, 
+                laboriosam autem asperiores accusantium officia, ducimus 
+                itaque ut dolore praesentium optio repudiandae!</p>
+        </div>
+
+        <div>
+            <h2 id="font">Título</h2>
+            <!-- Lorem é usado pra preencher textos aleatórios, basta digita Lorem -->
+            <p>Lorem, ipsum dolor sit amet consectetur 
+                adipisicing elit. Laboriosam exercitationem 
+                totam eius minima rem commodi. Ratione aperiam at, 
+                laboriosam autem asperiores accusantium officia, ducimus 
+                itaque ut dolore praesentium optio repudiandae!</p>
+        </div>
+    </body>
+</html>

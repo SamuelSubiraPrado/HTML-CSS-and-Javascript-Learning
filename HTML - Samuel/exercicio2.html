@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 2</title>
+        <meta charset="UTF-8">
+
+        <style>
+            nav{
+                background: red;
+                padding: 25px;
+            }
+    
+            /* centralizando o texto */
+            nav ul{
+                text-align: center;
+                /* Remove todos os estilos da lista como as bolinhas numeros ou letras antes */
+                list-style: none;
+            }
+    
+            /* Isso deixa as coisas uma do lado da outra */
+            nav ul li{
+                display: inline-block;
+                padding: 15px;
+            } 
+    
+            nav ul li a{
+                /* mudando a cor da fonte */
+                color: #fff;
+                /* Tira a decoração */
+                text-decoration: None;
+                /* muda a fonte do texto */
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+            /* Hover indica que é o mouse sobre o texto */
+            nav ul li a:hover{
+                /* Quando passar o mouse sobre o texto mudará a cor */
+                color: black;
+            }
+
+            /* #circulo{
+                list-style-type:disc;
+            }
+             */
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li> <a href="exercicio1.html">Exercício 1</a> </li>
+                <li> <a href="exercicio2.html">Exercício 2</a> </li>
+                <li> <a href="exercicio3.html">Exercício 3</a> </li>
+                <li> <a href="exercicio4.html">Exercício 4</a> </li>
+            </ul>
+        </nav>
+
+        <h1>Listas</h1>
+
+        <div>
+            <ul>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                
+                <ol>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+
+                    <ul id="circulo">
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                    </ul>
+
+                </ol>
+
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li>Item</li>
+                </ul>
+            </ul>
+
+        </div>
+
+    </body>
+</html>

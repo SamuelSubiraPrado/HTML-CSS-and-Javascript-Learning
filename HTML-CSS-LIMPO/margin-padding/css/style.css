@@ -1,0 +1,33 @@
+
+/* Esse * é usado para alterar configurações padrão dos navegadores */
+/* 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+*/
+
+div{
+    border: 1px solid blue; 
+    /*         cima   dir baixo esq */
+    /* padding: 40px 40px 40px 40px; */
+
+    padding: 60px 10px 50px 10px; /* de dentro pra fora */
+
+    /* Ao inves de colocar para cada um, podemos colocar 1x apenas e ele irá autom fazer p/todos */
+    padding: 40px;
+
+    /* Dá pra mudar só um  dos lados (top, left, bottom, right) */
+    /* padding-top: 60px; */
+
+    margin: 40px 40px 40px 40px; /* de fora pra fora */
+}
+
+h1{
+    border: 1px solid blue;
+    padding: 20px;
+    margin: 20px;
+}

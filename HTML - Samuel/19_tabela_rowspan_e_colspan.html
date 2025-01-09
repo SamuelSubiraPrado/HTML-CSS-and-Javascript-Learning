@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table{
+            /* Une todas as linhas */
+            border-collapse: collapse;
+            width: 40%;
+        }
+        table tr, td, th{
+            /* Cria linhas envolta da tabela */
+            border: 1px solid #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Tabela colspan e rowspan</h1>
+        <table>
+            <tr>  
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Ocupação</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Samuel</td>
+                <td>11 99999-9999</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td colspan="2">Detalhes Adicionais</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

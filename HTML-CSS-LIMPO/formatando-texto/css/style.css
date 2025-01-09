@@ -1,0 +1,16 @@
+p{  
+    /*Por padrão os navegadores tem essas config de tamanho de fonte 16px = 1em = 100% */
+
+    font-size: 1em;
+
+    /* espaçamento das linhas */
+    line-height: 0.1em;
+
+    /* espaçamento entre as letras */
+    letter-spacing: 0.1em;
+
+
+    /* Decorar texto */
+    text-decoration: underline;
+    text-decoration: line-through;
+}

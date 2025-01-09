@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    /*         espessura  tipo  cor */
+    /*border:     3px    solid  red; */
+
+    /*              Borda pontilhada */
+    /* border: 3px       dotted      red; */
+
+    /*                Borda dupla */
+    /* border: 3px       double      red; */
+
+    /* também podemos passar os 3 parametros em separado */
+    border-width: 6px;
+    border-style: dotted;
+    border-color: blue;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- Meta-dados -->
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Título -->
+ 
+            <title>Projeto Senac</title>
+ 
+        <!-- Caminho css -->
+            <link rel="stylesheet" href="./TelaPrincipal/assets/css/style.css">
+        <!-- ----------- -->
+
+        <!-- Icone do site (lá na barra) -->
+         
+        <link rel="icon" type="image/png" sizes="56x56" href="./TelaPrincipal/assets/images/logo_icon.svg">
+        <!-- ----------- -->
+        
+        <!-- Como pegar esse link? site fontawesome, docs, pesquisar cdn, 
+         cdn vs kit, descer até encontrar load all styles, copiar e colar link -->
+        
+         <!-- Usando a biblioteca do fontawesome (Icones)-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+        <!-- ----------- -->
+
+    </head>
+
+    <body>
+
+        <!--    Header   -->
+            <header>
+                <div class="container" id="container_header">
+
+                    <!-- Dividir em 2 displays flex (na esquerda, os menus e logo e na direita a pesquisa e icone de login) -->
+                    <!-- Depois dentro de cada um dividir novamente entre logo e parte escrita -->
+                    <div class="container">
+                        <!-- Logo -->
+                        <a href="#" id="logo">
+                            <!-- <img src="img/logo.png" alt=""> -->
+                            <i class="fas fa-gamepad"></i>
+                        </a>
+
+                        <!-- Menus de navegação -->
+                        <nav>
+                            <ul>
+                                <li><a href="#home" class="menu">Home</a></li>
+                                <li><a href="#como_funciona">Como Funciona</a></li>
+                                <li><a href="#nossa_trajetoria">Nossa trajetória</a></li>
+                                <li><a href="#feedbacks">Feedbacks</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="container" id="container_pesquisa_login">
+                        <form action="" id="form_pesquisa">
+                            <input type="text" placeholder="Pesquisar">
+                        </form>
+                        <!-- Icone de login -->
+                        <a href="./TelaLogin/Login.html" id="login_icon"> <!--  Colocar o link da página de login (Corrigido, agora tá funcionando)   -->
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        <!-- Fim Header -->
+
+        <!--    Main   -->
+        <main id="home">
+            <div class="container">
+                <!-- Contém o banner principal do site -->
+                <a href="./TelaVenda/venda.html"><div id="banner_principal"></div></div></a>
+            </div>
+
+            <!-- Alteração feita para contém duas classes -->
+            <div class="container titulo_e_todos">
+                <ul>
+                    <li><h1>Lançamentos</h1></li>
+                    <li><a href="./TelaVenda/todos_jogos.html">Todos os Lançamentos> </a></li>
+                </ul>
+            </div>
+
+            <!-- Ideia: Colocar uma img de seta ao lado das extremidades das capas -->
+            <!-- Quando clicarem nela, trocamos as imagens dos jogos por 4 outras -->
+            <!-- Assim dá a impressão de que rolaram uma fila -->
+ 
+            <section id="jogos_lancamentos">
+                <div class="container contianer_centralizar">
+
+                    <i class="fas fa-chevron-circle-left setas seta-esquerda" id="seta-esquerda-lancamentos"></i>
+                    
+                    <div class="col-flex">
+                        <div class="col-flex">
+                            <div class="imagem_jogos">
+                               <a href="./TelaVenda/venda.html"><img src="./TelaPrincipal/assets/images/lançamentos_eldenring.jpg" alt="Lançamento Elden Ring"></a>
+                                <h3 class="nome_jogos"><a href="./TelaVenda/venda.html">Elden Ring + DLC</a></h3>
+                                <span class="preco_jogos">R$199,90</span>
+                            </div>
+                            <div class="imagem_jogos">
+                               <a href="./TelaVenda/venda.html"><img src="./TelaPrincipal/assets/images/lançamentos_dragonsdogma.jpg" alt="Lançamento Dragon's Dogma"></a>
+                                <h3 class="nome_jogos"><a href="./TelaVenda/venda.html">Dragon's Dogma</a></h3>
+                                <span class="preco_jogos">R$149,90</span>
+                            </div>
+                            <div class="imagem_jogos">
+                               <a href="./TelaVenda/venda.html"><img src="./TelaPrincipal/assets/images/Lançamentos_ac_shadows.jpg" alt="Lançamento AC Shadows"></a>
+                                <h3 class="nome_jogos"><a href="./TelaVenda/venda.html">AC Shadows</a></h3>
+                                <span class="preco_jogos">R$179,90</span>
+                            </div>
+                            <div class="imagem_jogos">
+                               <a href="./TelaVenda/venda.html"><img src="./TelaPrincipal/assets/images/lançamentos_naruto.jpg" alt="Lançamento Naruto"></a>
+                                <h3 class="nome_jogos"><a href="./TelaVenda/venda.html">Naruto Ultimate</a></h3>
+                                <span class="preco_jogos">R$129,90</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <i class="fas fa-chevron-circle-right setas seta-direita" id="seta-direita-lancamentos"></i>
+                
+                </div>
+            </section>
+            
+
+            <div class="container titulo_e_todos">
+                <ul>
+                    <li><h1>Mais Vendidos</h1></li>
+                    <li><a href="./TelaVenda/todos_jogos.html">Todos os Mais Vendidos> </a></li>
+                </ul>
+            </div>
+
+
+            <section id="jogos_mais_vendidos">
+                <div class="container contianer_centralizar">
+
+                    <i class="fas fa-chevron-circle-left setas seta-esquerda" id="seta-esquerda-lancamentos"></i>
+
+                    <div class="col-flex">
+                        <div class="imagem_jogos">
+                           <a href="./TelaVenda/venda.html"><img src="./TelaPrincipal/assets/images/alan wake 2.jpg" alt="Mais vendidos Alan Wake 2"></a>
+                            <h3 class="nome_jogos"><a href="./TelaVenda/venda.html">Alan Wake 2</a></h3>
+                            <span class="preco_jogos">R$199,90</span>
+                        </div>
+                        <div class="imagem_jogos">
+                           <a href="./TelaVenda/venda.html"><img src="./TelaPrincipal/assets/images/maisvendidos_cyberpunk.jpg" alt="Mais vendidos Cyberpunk 2077 + DLC"></a>
+                            <h3 class="nome_jogos"><a href="./TelaVenda/venda.html">Cyberpunk 2077 + DLC</a></h3>
+                            <span class="preco_jogos">R$149,90</span>
+                        </div>
+                        <div class="imagem_jogos">
+                           <a href="./TelaVenda/venda.html"><img src="./TelaPrincipal/assets/images/maisvendidos_gtav.jpg" alt="Mais vendidos Grand Theft Auto V"></a>
+                            <h3 class="nome_jogos"><a href="./TelaVenda/venda.html">Grand Theft Auto V</a></h3>
+                            <span class="preco_jogos">R$179,90</span>
+                        </div>
+                        <div class="imagem_jogos">
+                           <a href="./TelaVenda/venda.html"><img src="./TelaPrincipal/assets/images/maisvendidos_rdr2.jpg" alt="Mais vendidos Red Dead Redemption 2"></a>
+                            <h3 class="nome_jogos"><a href="./TelaVenda/venda.html">Red Dead Redemption 2</a></h3>
+                            <span class="preco_jogos">R$129,90</span>
+                        </div>
+                    </div>
+
+                    <i class="fas fa-chevron-circle-right setas seta-direita" id="seta-direita-lancamentos"></i>
+                </div>
+            </section>
+            <br>
+            <section id="como_funciona">
+                <div class="container titulo_e_todos">
+                     <!-- Tranformar os h1 em h2 -->
+                    <h2>Como Funciona</h2>
+                    <div class="paragrafo">
+                        <p>
+                            Bem-vindo ao Projeto SENAC, o seu destino definitivo para encontrar e adquirir jogos incríveis! Nossa missão é proporcionar uma experiência de compra simples e agradável.
+                        </p>
+                        <h3 class="subtitulo">Descubra Novos Jogos</h3>
+                        <p>
+                            Explore nosso vasto acervo de jogos por meio das categorias disponíveis, pesquisa por título ou filtros avançados. Nossos filtros permitem que você refine a busca por gênero, plataforma, preço e muito mais.
+                        </p>
+                        <h3 class="subtitulo">Visualize Detalhes</h3>
+                        <p>
+                            Cada jogo disponível no site possui uma página com informações detalhadas, incluindo sinopses, imagens, trailers e avaliações de outros jogadores. Isso ajuda você a conhecer bem o jogo antes de comprar.
+                        </p>
+                        <h3 class="subtitulo">Adicione ao Carrinho</h3>
+                        <p>
+                            Quando encontrar o jogo que deseja, adicione-o ao seu carrinho de compras. Você pode continuar navegando e adicionar outros itens, ou revisar seu carrinho a qualquer momento.
+                        </p>
+                        <h3 class="subtitulo">Finalização da Compra</h3>
+                        <p>
+                            Ao estar pronto para comprar, vá até seu carrinho e siga para a finalização da compra. Oferecemos várias formas de pagamento seguras para garantir que sua transação seja rápida e tranquila.
+                        </p>
+                        <h3 class="subtitulo">Receba seu Jogo</h3>
+                        <p>
+                            Após a confirmação do pagamento, seu jogo estará disponível para download ou você receberá um código de ativação. As instruções para acessar seu jogo serão enviadas por e-mail ou estarão disponíveis diretamente na sua conta.
+                        </p>
+                        <h3 class="subtitulo">Apoio e Suporte</h3>
+                        <p>
+                            Caso encontre qualquer dificuldade ou tenha dúvidas, nossa equipe de suporte está sempre pronta para ajudar. Entre em contato conosco através do chat, e-mail ou telefone, e resolveremos qualquer questão que você possa ter. Estamos aqui para garantir que sua experiência de compra seja a melhor possível. Se tiver sugestões ou feedback, não hesite em nos informar.
+                        </p>
+                        <br>
+                        <p>
+                            Divirta-se com seus novos jogos!
+                        </p>
+                        <br>
+                        <p>
+                            - Equipe Projeto SENAC
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nossa_trajetoria">
+                <div class="container titulo_e_todos">
+                         <!-- Tranformar os h1 em h2 -->
+                        <h2>Nossa Trajetória</h2>
+                        <div class="paragrafo">
+                            <p>
+                                Nossa jornada começou com uma simples paixão por jogos e a missão de tornar o universo dos games mais acessível e divertido para todos. Ao longo dos anos, crescemos e evoluímos, sempre com o compromisso de oferecer a melhor experiência de compra para nossos clientes.
+                            </p>
+                            <h3 class="subtitulo">Início da Jornada</h3>
+                            <p>
+                                Fundada em 2XXX, Projeto SENAC nasceu da ideia de criar um espaço onde gamers de todas as partes do mundo pudessem encontrar os jogos que amam com facilidade e segurança. Com uma equipe pequena, mas entusiástica, começamos nossa trajetória oferecendo uma seleção cuidadosamente curada de jogos para diversas plataformas.
+                            </p>
+                            <h3 class="subtitulo">Crescimento e Expansão</h3>
+                            <p>
+                                À medida que o tempo passou, nosso compromisso com a qualidade e a satisfação dos clientes nos impulsionou a expandir nosso catálogo e nossos serviços. Introduzimos novas funcionalidades, como avaliações de usuários, recomendações personalizadas e um suporte ao cliente dedicado, sempre buscando melhorar a experiência de compra.
+                            </p>
+                            <h3 class="subtitulo">Inovação e Desenvolvimento</h3>
+                            <p>
+                                Nos últimos anos, continuamos a inovar, incorporando novas tecnologias e tendências do setor. Implementamos melhorias em nossa plataforma para tornar a navegação mais intuitiva e o processo de compra mais ágil. Além disso, ampliamos nossas parcerias com desenvolvedores e publishers para trazer lançamentos exclusivos e ofertas especiais para nossos usuários.
+                            </p>
+                            <h3 class="subtitulo">Nosso Compromisso</h3>
+                            <p>
+                                Hoje, Projeto SENAC é um dos principais destinos para gamers, conhecido por sua variedade, confiabilidade e atendimento excepcional. Estamos orgulhosos do que conquistamos, mas sabemos que o sucesso está em constante evolução. Continuamos a ouvir nossos clientes e a buscar maneiras de aprimorar nossos serviços, sempre com a paixão por jogos que nos motivou desde o início.
+                            </p>
+                            <h3 class="subtitulo">O Futuro</h3>
+                            <p>
+                                Olhamos para o futuro com entusiasmo, prontos para enfrentar novos desafios e explorar novas oportunidades no mundo dos jogos. Agradecemos a cada um de nossos clientes por fazer parte da nossa jornada. Sem vocês, nada disso seria possível.
+                            </p>
+                            <br>
+                            <p>
+                                Obrigado por escolher Projeto SENAC. Estamos ansiosos para continuar a oferecer a você as melhores experiências no universo dos jogos!
+                            </p>
+                            <br>
+                            <p>
+                                - Equipe Projeto SENAC
+                            </p>
+                        </div>
+                </div>
+            </section>
+
+            <section id="feedbacks">
+                <div class="container titulo_e_todos">
+                         <!-- Tranformar os h1 em h2 -->
+                        <h2>Feedbacks</h2>
+                        <div class="paragrafo">
+                            <p>
+                                Sua opinião é fundamental para nós! Na Projeto SENAC, estamos sempre em busca de maneiras de aprimorar nossos serviços e oferecer a melhor experiência de compra possível. Seus feedbacks são essenciais para nos ajudar a alcançar esse objetivo. Queremos ouvir de você!
+                            </p>
+                            <h3 class="subtitulo">Compartilhe Sua Experiência</h3>
+                            <p>
+                                Se você já comprou jogos em nosso site, convidamos você a compartilhar sua experiência conosco. Suas avaliações e comentários ajudam outros gamers a fazer escolhas informadas e nos permitem entender o que estamos fazendo bem e onde podemos melhorar.
+                            </p>
+                            <h3 class="subtitulo">Como Deixar um Feedback</h3>
+                            <p>
+                                Para deixar um feedback, basta acessar a seção de avaliações de produtos em nosso site. Lá, você pode deixar uma nota e escrever um comentário sobre sua experiência com o jogo que adquiriu e com nosso serviço. Se preferir, também pode nos enviar um e-mail diretamente ou usar o formulário de contato disponível na nossa página de suporte.
+                            </p>
+                            <h3 class="subtitulo">Avaliamos e Respondemos</h3>
+                            <p>
+                                Nosso time revisa todos os feedbacks com cuidado e atenção. Valorizamos cada opinião e usamos as informações para fazer ajustes e melhorias contínuas. Caso você tenha alguma preocupação específica ou um problema a resolver, entraremos em contato para garantir que sua experiência seja resolvida da melhor forma possível.
+                            </p>
+                            <h3 class="subtitulo">Agradecemos Seu Tempo</h3>
+                            <p>
+                                Agradecemos profundamente por dedicar um tempo para nos fornecer suas opiniões. Seu feedback não só nos ajuda a crescer, mas também contribui para criar uma comunidade de gamers mais informada e conectada.
+                            </p>
+                            <br>
+                            <p>
+                                Obrigado por fazer parte da nossa jornada e por nos ajudar a oferecer uma experiência de compra cada vez melhor!
+                            </p>
+                            <br>
+                            <p>
+                                - Equipe Projeto SENAC
+                            </p>
+                        </div>
+                </div>
+            </section>
+
+            <section id="user-feedback">
+                <div class="container">
+                    <h2>Confira o Feedback de nossos clientes:</h2>
+
+                    <div class="col-flex" id="box-users">
+                        <div id="user">
+                            <h3>Ótimo serviço</h3>
+                            <i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i>
+                            <p>"Recebi meu produto na mesma hora. Tudo muito seguro e rápido. Recomendo."</p>
+                            <h2>- Cláudio</h2>
+                        </div>
+                        <div id="user">
+                            <h3>Rápida entrega</h3>
+                            <i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i>
+                            <p>"O código de ativação foi enviado na mesma hora que comprei meu produto, sem tempo de espera."</p>
+                            <h2>- José</h2>
+                        </div>
+                        <div id="user">
+                            <h3>Muito seguro</h3>
+                            <i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i>
+                            <p>"Achei todo o processo de compra seguro e confiável, recomendo o site."</p>
+                            <h2>- Laura</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+        <!-- BOTÃO PARA VOLTAR AO TOPO -->
+        <div id="topo">
+            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            <!-- <a href="#home">TOPO</a> -->
+        </div>
+        <!-- FIM BOTÃO TOPO -->
+
+        
+        </main>
+        <!-- Fim Main -->
+
+    </body>
+    
+    <!-- TÓPICO 3 RESPONSIVO FOOTER ISABELLA -->
+    <!--    Footer   -->
+    <footer id="contato">
+        <div id="principal">
+            <div id="col_redes_sociais">
+                <p id="site-nome"><img src="./TelaPrincipal/assets/images/logo_icon_branco.svg" alt="logo"> Projeto SENAC</p>
+                <p>Siga-nos nas redes sociais:</p>
+
+                <div id="icones_redes">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>        
+                </div>
+
+            </div>
+
+            <div id="col_suporte">
+                <ul>
+                    <h2>Atendimento</h2>
+                    <li>Fone: (11) 9 0000-0000</li>
+                    <li>E-mail: 1234.5678@gmail.com</li>
+                    <li><a href="#">FAQ: projetosenac.com.br/faq</a></li>
+                </ul> 
+            </div>
+        </div>
+        <p id="creditos">Desenvolvido por Samuel, Isabella, Juliana</p>
+    </footer>
+    <!-- Fim Footer -->
+    <!-- TÓPICO 3 RESPONSIVO FOOTER ISABELLA -->
+
+</html>

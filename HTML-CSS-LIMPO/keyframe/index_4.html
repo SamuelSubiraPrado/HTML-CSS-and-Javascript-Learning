@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        div{
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            position: relative;
+        }
+
+        /* Só vai ativar a animação quando colocar o mouser em cima */
+        div:hover{
+            /* nome que voce quiser  duração  comportamento*/
+            animation: meukeyframe     5s      infinite;
+        }
+
+        @keyframes meukeyframe{
+            /* Essa porcentagem se refere ao tempo, ex: 50% do tempo(5s) = 2,5s */
+
+            0%{
+                background-color: rgb(202, 43, 226);
+                transform: rotate(0deg);
+            }
+            25%{
+                background-color: rgb(83, 43, 226);
+                transform: rotate(90deg); 
+            }
+
+            50%{
+                background-color: rgb(43, 43, 226);
+                transform: rotate(180deg);
+            }
+
+            75%{
+                background-color: rgb(43, 171, 226);
+                transform: rotate(270deg);
+            }
+
+            100%{
+                background-color: rgb(43, 226, 217);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Regra keyframe</h1>
+
+    <div></div>
+
+    <p>Coloque o mouse sobre o quadrado</p>
+</body>
+</html>

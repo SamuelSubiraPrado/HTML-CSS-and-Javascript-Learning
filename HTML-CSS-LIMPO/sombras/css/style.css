@@ -1,0 +1,24 @@
+div{
+    /* A sombra fica melhor se tirar a borda */
+    /* border: 1px solid black; */
+    margin: 30px;
+    padding: 3px;
+
+    /*            sombra lateral   baixo ou cima    blur(intensidade)     cor combra */
+    /* box-shadow:      10px           10px                15px            #999; */
+
+    /* Se colocar os parametros negativas ele inverte, ou seja da direita, vai para a esquerda, de baixo vai p/cima */
+    /* box-shadow: -15px -15px 60px #999; */
+
+    /* inset - coloca a sombra dentro da borda */
+    /* box-shadow: inset -15px -15px 60px #999; */
+
+    /* Informações pegas no site cssmatic.com (gerador de sombra)*/
+    -webkit-box-shadow: 25px 15px 37px -3px rgba(0,0,0,0.34);
+    -moz-box-shadow: 25px 15px 37px -3px rgba(0,0,0,0.34);
+    box-shadow: 25px 15px 37px -3px rgba(0,0,0,0.34);
+}
+
+div:hover{
+    box-shadow: 10px 10px 30px #999;
+}

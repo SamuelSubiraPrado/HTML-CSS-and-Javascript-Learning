@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site</title>
+
+    <!-- Icone que fica na barra do título -->
+    <link rel="icon" type="image/png" sizes="56x56" href="assets_projeto/img/favicon.png"  >
+
+    <!-- As tags meta são só para os robos de busca -->
+    <meta name="description"
+        content="Tudo sobre o universo DC, HQs, filmes, animações e etc. Conteúdo diverso, colunas semanais no site, a sua maior fonte de conteúdo DC, de fãs para fãs.">
+
+    <meta name="keywords" content="DC, filmes, HQs, BATMAN, MULHER MARAVILHA, SUPERMAN, CORINGA, ARLEQUINA, Heróis da DC Comics">
+
+    <meta name="author" content="Samuel Prado">
+
+    <!-- Open Graph Protocol -->
+    <!-- Algumas redes sociais e alguns serviços, como WhatsApp, Telegram e Slack, costumam utilizar essas informações para montar a prévia do conteúdo. -->
+    <meta property="og:title" content="DC Comics">
+    <meta property="og:description"
+        content="Tudo sobre o universo DC: HQs, filmes, animações e etc. Conteúdo diverso, colunas semanais no site, a sua maior fonte de conteúdo DC, de fãs para fãs.">
+    <!-- <meta property="og:url" content="https://exemplo.com/" /> -->
+    <meta property="og:url" content="https://dc-frontend-1-2024.netlify.app/">
+    <meta property="og:image" content="https://dc-frontend-1-2024.netlify.app/img/banner.jpeg">
+    <meta property="og:type" content="website">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Estilo tirado do site fontawesome, docs, pesquisamos CDN, no kit, copiamos este link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+</head> 
+
+<body>
+    <header>
+        <div class="container">
+
+
+            <a href="#">
+                <img id="logo" src="assets_projeto/img/logo.png" alt="Logo DC Comics">
+            </a>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="banner"></section>
+
+
+        <section id="sobre">
+            <div class="container">
+                <h2 class="titulo">Sobre</h2>
+
+                <div class="col-float-4">
+                    <div>
+                        <p><i class="fas fa-running"></i></p>
+                        <h3>Flash</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex vero impedit harum, nulla
+                            pariatur praesentium sapiente quaerat nostrum sit quia a itaque fugiat cumque quo ullam rem
+                            ratione perferendis aut!</p>
+                    </div>
+                </div>
+
+                <div class="col-float-4">
+                    <div>
+                        <p><i class="fas fa-mask"></i></p>
+                        <h3>Batman</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex vero impedit harum, nulla
+                            pariatur praesentium sapiente quaerat nostrum sit quia a itaque fugiat cumque quo ullam rem
+                            ratione perferendis aut!</p>
+                    </div>
+                </div>
+
+                <div class="col-float-4">
+                    <div>
+                        <p><i class="fas fa-glasses"></i></p>
+                        <h3>Superman</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex vero impedit harum, nulla
+                            pariatur praesentium sapiente quaerat nostrum sit quia a itaque fugiat cumque quo ullam rem
+                            ratione perferendis aut!</p>
+                    </div>
+                </div>
+
+                <div class="col-float-4">
+                    <div>
+                        <p><i class="fas fa-water"></i></p>
+                        <h3>Aquaman</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex vero impedit harum, nulla
+                            pariatur praesentium sapiente quaerat nostrum sit quia a itaque fugiat cumque quo ullam rem
+                            ratione perferendis aut!</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <div class="clear"></div>
+
+
+        <section id="galeria">
+            <div class="container">
+                <h2 class="titulo">Galeria</h2>
+        
+                <div class="col-flex">
+                    <div class="flex-item">
+                        <img src="assets_projeto/img/banner1.jpg" alt="imagens de personagens da DC">
+                    </div>
+                    <div class="flex-item">
+                        <img src="assets_projeto/img/banner2.jpg" alt="imagens de personagens da DC">
+                    </div>
+                    <div class="flex-item">
+                        <img src="assets_projeto/img/banner3.jpg" alt="imagens de personagens da DC">
+                    </div>
+                    <div class="flex-item">
+                        <img src="assets_projeto/img/banner4.jpg" alt="imagens de personagens da DC">
+                    </div>
+                    <div class="flex-item">
+                        <img src="assets_projeto/img/banner5.jpg" alt="imagens de personagens da DC">
+                    </div>
+                    <div class="flex-item">
+                        <img src="assets_projeto/img/banner6.jpg" alt="imagens de personagens da DC">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aviso">
+            <div class="container">
+                <h3 class="titulo">Aviso importante</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, ipsa molestias numquam maxime
+                    quaerat
+                    ipsum impedit alias. Sed adipisci accusamus enim vitae. Minima fugiat dolores accusantium nisi
+                    voluptas
+                    iste possimus.</p>
+                    
+                    <a href="#" class="btn">Botão</a>
+                    <!-- <button class="btn">teste</button> -->
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2 class="titulo">Contato</h2>
+                
+                <h3>Envie-nos uma mensagem</h3>
+
+                <div class="col-grid">
+
+                    <form action="">
+
+                        <label for="">Nome</label>
+                        <input type="text" placeholder="Digite seu nome">
+
+                        <label for="">E-mail</label>
+                        <input type="email" placeholder="Digite seu e-mail">
+
+                        <label for="">Telefone</label>
+                        <input type="tel" placeholder="Digite seu telefone">
+
+                        <label for="">Assunto</label>
+
+                        <select name="" id="">
+                            <option value="">Selecione o assunto</option>
+                            <option value="">Assunto 1</option>
+                            <option value="">Assunto 2</option>
+                            <option value="">Assunto 3</option>
+                        </select>
+
+                        <label for="">Mensagem</label>
+                        <textarea name="" id="" placeholder="Digite sua mensagem"></textarea>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+
+                    <div class="redes">
+                        <h3>Dispomos de um time excepcional e altamente comprometido, dedicado ao seu bem-estar.</h3>
+                        <p>
+                            <a href="">
+                                <i><i class="fas fa-envelope"></i></i> contato@email.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="">
+                                <i><i class="fab fa-brands fa-whatsapp"></i></i> 11 99999-9999
+                            </a>
+                        </p>
+                        <p>
+                            <a href="">
+                                <i><i class="fa fa-solid fa-phone"></i></i> 11 3333-3333
+                            </a>
+                        </p>
+                        <p>
+                            <a href="">
+                                <i><i class="fas fa-map-marker-alt"></i></i>  R. Tito, 54 - Vila Romana, São Paulo - SP,
+                                05051-000
+                            </a>
+                        </p>
+
+                    </div>
+                
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section id="mapa" class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.122783305187!2d-46.694335124670914!3d-23.528085878822687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1721478501452!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <div id="topo">
+            <a href=""><i class="fas fa-arrow-up"></i></a>
+        </div>
+
+
+
+
+    </main>
+
+
+
+    <footer>
+        <p>Desenvolvido por Samuel Prado</p>
+    </footer>
+
+</body>
+
+</html>
+

@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* Faz com que as mudanças quando clicamos em links sejam mais suaves */
+    scroll-behavior: smooth;
+}
+
+/* -Barra lateral- */
+html::-webkit-scrollbar{
+    width: 15px;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: #35adf2;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #3792e8;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background-color: #0040ff;
+}
+
+/* ----------------------- */
+#home, #sobre, #galeria, #contato{
+    /* Coloca uma margem quando você clica para ir em algum link, fazendo com que apareceça corretamente */
+    scroll-margin-top: 120px;
+}
+
+/* Muda o tamanho do icone */
+#sobre i{
+    font-size: 50px;
+}
+.container { 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    height: 90px;
+    line-height: 60px;
+    padding: 15px;
+    overflow: hidden;
+    /* Faz uma borda abaixo do header */
+    border-bottom: 4px solid #1c75bc;
+
+    /* Faz com que ele fique fixo, sempre que descer o site, ainda vai ficar aparecendo */
+    position: fixed;
+    width: 100%;
+
+    left: 0;
+    top: 0;
+
+    display: block;
+    unicode-bidi: isolate;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header #logo img {
+    width: 20%;
+    /* padding: 20px 0; */
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header nav a {
+    color: white;
+}
+
+header nav a:hover {
+    color: #1c75bc;
+    border-bottom: #1c75bc solid 2px;
+    padding-bottom: 10px;
+}
+
+header div a img {
+    width: 20%;
+}
+
+/* folha de estilos de agente de usuário */
+/* img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+} */
+
+main{
+    /* Como colocamos o header fixo, a imagem é cortada */
+    /* Então fazemos essa alteração para mostrar toda a img corretamente */
+    margin-top: 26px;
+}
+
+p{
+    font-size: 18px;
+}
+
+#banner {
+    background-image: url('../assets_projeto/img/banner.jpeg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#sobre,
+#galeria,
+#contato,
+#home {
+    margin: 80px 0;
+}
+
+
+.col-float-4 {
+    /* border: 1px solid #000; */
+    width: 25%;
+    float: left;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.col-float-4 div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.col-float-4 p {
+    padding: 15px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.col-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex: 1 1 25%;
+
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%; */
+
+    /* border: 1px solid #000; */
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#aviso {
+    background-color: #1c75bc;
+    color: #fff;
+}
+
+#aviso p{
+    text-align: center;
+}
+
+#aviso .container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.btn{
+    /* background-color: rgba(255, 0, 0, 0); */
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    height: 57px;
+    justify-content: center;
+    align-content: center;
+    color: rgb(201, 205, 224);
+    border: 2px solid rgb(201, 205, 224);
+}
+
+.btn:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #1c75bc;
+}
+
+.col-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    
+}
+
+#contato h3 {
+    padding: 15px 0;
+}
+
+#contato form label{
+    font-size: 20px;
+    margin: 15px 0 5px 0;
+    width: 100%;
+    display: block;
+    padding-left:15px ;
+}
+
+#contato form input{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #757575;
+    border: 2px solid blue;
+    border-radius: 25px;
+    height: 40px;
+}
+
+#contato input:focus {
+    border-color: #0077ff; /* Altere essa cor para a desejada */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+#contato form select{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #757575;
+    border: 2px solid blue;
+    border-radius: 25px;
+    height: 40px;
+    appearance: none;
+    -webkit-appearance: none; /*Modifica p/ safari e chrome */
+    -moz-appearance: none; /*Modifica firefox */
+
+    /* Configurando a setinha */
+    background-image: url(
+        'data:image/svg+xml;utf8,<svg fill="%23ccc" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"> <path d="M7 10l5 5 5-5z"/> </svg>');
+
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    }
+
+#contato select:focus {
+        border-color: #0077ff; /* Altere essa cor para a desejada */
+        outline: none; /* Remove o contorno padrão do navegador */
+    }
+
+#contato form textarea{
+    width: 100%;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    color: #757575;
+    border: 2px solid blue;
+    border-radius: 25px;
+    height: 40px;
+    appearance: none;
+    -webkit-appearance: none; /*Modifica p/ safari e chrome */
+    -moz-appearance: none; /*Modifica firefox */
+    height: 150px;
+}
+
+#contato textarea:focus {
+    border-color: #0077ff; /* Altere essa cor para a desejada */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+/* Podemos pegar só um dos tipos de input para alterção */
+#contato form input[type="submit"]{
+    width: 30%;
+    padding: 15px 20px!important;
+    text-transform: uppercase;
+    height: 57px;
+    background: #fff;
+    border: 2px solid blue;
+    margin-top: 30px;
+}
+
+#contato input[type="submit"]:hover {
+    background: rgb(43, 70, 226);
+    border: 2px solid #fff;
+    color: #fff !important;
+}
+
+
+#mapa iframe{
+    width:100%;    
+    height: 300px;
+}
+
+#topo a{
+    background-color: #1c75bc;
+    border: 2px solid white;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Fixa o elemente na tela */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    /* Suaviza a transição do hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+#topo a:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+
+    /* Forma simples */
+    text-align: center;
+    padding: 15px;
+
+    /* Forma complexa */
+    /*
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    */
+
+
+}
+
+.redes p{
+    padding-bottom: 15px;
+}
+
+.redes a{
+    display: flex;
+    gap: 20px;
+    color: #000;
+}
+
+.redes a:hover{
+    display: flex;
+    gap: 20px;
+    color: rgb(43, 70, 226);
+}
+
+.redes i{
+    font-size: 22px;
+}
+
+#contato iframe{
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    width: 300px;
+}
+
+footer{
+    margin-top: 70px;
+}
+/* Redimensionamento de acordo com o tamanho da tela (celular, pc, tablet) */
+
+@media (max-width: 768px){
+    .col-float-4{
+        width: 50%;
+    }
+
+    .col-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .col-float-4{
+        width: 100%;
+    }
+    #topo{
+        display: none;
+    }
+    .col-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+        /* Para manter o layout responsivo */
+
+        @media (max-width: 840px) {
+            header a {
+                width: 40%;
+                /* padding: 20px 0; */
+            }
+/* 
+            header a img{
+
+            } */
+        }
+
+        @media (max-width: 768px) {
+            .flex-item {
+                flex: 1 1 25%;
+                /* 2 colunas em telas menores */
+            }
+
+            #contato .col-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .col-float-4 {
+                padding: 15px 20px;
+                width: 50%;
+                float: left;
+
+            }
+
+            header .container{
+                display: block;
+            }
+
+            header #logo img{
+                width: 17%;
+            }
+
+            header nav ul{
+                text-align: center;
+            }
+
+            header #logo{
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 425px) {
+            .flex-item {
+                flex: 1 1 100%;
+                /* 1 coluna em telas muito pequenas */
+            }
+
+            #contato .col-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .col-float-4 {
+                padding: 15px 20px;
+                width: 100%;
+                float: left;
+
+            }
+            header .container{
+                display: block;
+            }
+
+            header #logo img{
+                width: 17%;
+            }
+
+            header nav ul{
+                text-align: center;
+            }
+
+            header #logo{
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
+
+
+      
+
+
+          

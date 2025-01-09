@@ -1,0 +1,48 @@
+/* Container principal */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Linha */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+/* Coluna */
+.col {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Classes de largura das colunas */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+/* Exemplo de estilo para as colunas */
+.col {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        width: 100%;
+    }
+}

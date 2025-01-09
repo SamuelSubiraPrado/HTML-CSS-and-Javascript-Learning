@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* MENU-------------------------------------------------------------- */
+        
+        /*Background do mini menu de exercícios*/
+        nav{
+            background-color: red;
+            padding: 25px;
+        }
+
+        /* Centralizando o texto e removendo os estilos (bolinhas, num) */
+        nav ul{
+            text-align: center;
+            list-style: none;
+        }
+
+        /*Deixar os textos organizados um ao lado do outro*/
+        nav ul li{
+            display: inline-block;
+            padding: 15px;
+        }
+
+        /*Mexendo no texto (menu) em si */
+        nav ul li a{
+            color: white;
+            text-decoration: None;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* Se refere as ações de quando passamos o mouse sobre o txt*/
+        nav ul li a:hover{
+            color: black;
+        }
+
+        /* ------------------------------------------------------------------ */
+
+        /* Formulário */
+        body{
+             background-color: rgb(248, 241, 211);
+            }
+        h1 {
+            /* Centralizando o texto */
+            text-align: center;
+            list-style: none;
+        }
+
+        form fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 1000px;
+            text-align: left;
+            margin: 0 auto; /* Centraliza o fieldset na tela */
+            padding: 20px; /* Adicionei para espaçamento interno */
+            border: 1px solid black; /* Adicionei borda para destacar o formulário */
+        }
+
+        .form-buttons {
+            display: flex;
+            justify-content: 25px space-between ; /* Distribui os botões igualmente */
+        }
+
+        #mensagem{
+            padding: 50px;
+            text-align: left
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="exercicio1.html">Exercício 1</a></li>
+            <li><a href="exercicio2.html">Exercício 2</a></li>
+            <li><a href="exercicio3.html">Exercício 3</a></li>
+            <li><a href="exercicio4.html">Exercício 4</a></li>
+        </ul>
+    </nav>
+    <!--      -->
+
+    <form action="" method="GET">
+        <h1>Formulário</h1>
+        
+        <fieldset>
+            <legend>Cadastro</legend>
+
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Digite seu nome" name="nome">
+
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" name="email">
+
+            <label for="senha">Senha</label>
+            <input type="password" placeholder="Digite sua senha" name="senha">
+
+            <label fro="opcoes">Opções</label>
+            <select name="opcoes" id="opcoes">
+                <option value="">Escolha uma opção</option>
+                <option value="item1">Item 1</option>
+                <option value="item2">Item 2</option>
+            </select>
+
+            <label for="cor">Escolha uma cor</label>
+            <input type="color" name="cor">
+
+
+            <label for="">Escolha uma ou mais linguagens</label>
+
+                <label for="opcao1">
+                    <input type="checkbox" id="opcao1" name="opcao1">HTML
+                </label>
+
+                <label for="opcao2">
+                    <input type="checkbox" id="opcao2" name="opcao2">CSS
+                </label>
+
+                <label for="opcao3">
+                    <input type="checkbox" id="opcao3" name="opcao3">JS
+                </label>
+
+                <label for="opcao3">
+                    <input type="checkbox" id="opcao3" name="opcao3">PHP
+                </label>
+
+                <label for="opcao3">
+                    <input type="checkbox" id="opcao3" name="opcao3">C#
+                </label>
+                
+            <!-- Usando o type como radio e colocando o name igual para todos, 
+                 só permite que uma das opções sejam selecionadas -->
+            <label for="">Oque você está estudando hoje?</label>
+
+                <label for="frontend">
+                     <input type="radio" id="frontend" name="programacao" value="programacao">Front-End
+                 </label>
+ 
+                 <label for="backend">
+                     <input type="radio" id="backend" name="programacao" value="programacao">Back-End
+                 </label>
+ 
+                 <label for="bancodedados">
+                     <input type="radio" id="bancodedados" name="programacao" value="programacao">Banco De Dados
+                 </label>
+
+            <label for="range">Escolha um range</label>
+            <input type="range" name="range">
+
+            <label for="numero">Digite um número</label>
+            <input type="number" name="numero">
+
+            <label for="aniversario">Digite a data do seu aniversário</label>
+            <input type="date" name="aniversario">
+
+            <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem">Digite sua mensagem</textarea>
+            
+                <div class="form-buttons">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+#principal{
+    width: 50%;
+    height: 300px;
+    padding: 20px;
+    background-color: #999999b7;
+    /* Esconde os textos que ficarem fora da caixa */
+    overflow: auto;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de cores</title>
+
+    <style>
+        #cor-rgb{
+            /*                    quanto mais próximo de 0 fica mais escuro e quanto mais próximo de 256 mais claro */
+            color: rgb(123, 0, 122);
+        }
+
+        #cor-rgb-opac{
+            background-color: rgba(123, 0, 200, 0.5);
+        }
+
+        #cor-hex{
+            background: #ccbbaa;
+        }
+
+        #cor-hsl{
+            color: hsl(0, 100%, 50%);
+        }
+
+        #cor-escrita{
+            background: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="cor-rgb">Esta cor esta em RGB</h1>
+
+    <h1 id="cor-rgb-opac">Esta cor esta em RGB com opacidade</h1>
+
+    <p id="cor-hex">Esta cor esta em hexadecimal</p>
+
+    <p id="cor-hsl">Esta cor esta em HSL</p>
+
+    <p id="cor-escrita">Esta cor esta de forma escrita</p>
+
+</body>
+</html>

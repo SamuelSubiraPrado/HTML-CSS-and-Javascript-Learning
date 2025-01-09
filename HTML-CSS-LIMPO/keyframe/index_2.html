@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        div{
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            /* nome que voce quiser  duração  comportamento*/
+            animation: meukeyframe     5s      infinite;
+            /* No comportamento o infinite faz com que a animação continue infinitamente */
+            position: relative;
+        }
+
+        @keyframes meukeyframe{
+            from{
+                top:0px;
+                /* Faz com que o objetivo rotacione ao longo da animação */
+                /* transforme também pode ser usado em textos, imagens, etc */
+                transform: rotate(10deg);
+            }
+            
+            to{
+                top:200px;
+                /* Vai transicionar a cor */
+                background-color: blue;
+
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Regra keyframe</h1>
+
+    <div></div>
+</body>
+</html>

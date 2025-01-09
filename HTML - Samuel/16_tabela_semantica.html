@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Semantica</title>
+    <style>
+
+        table{
+            /* Une todas as linhas */
+            border-collapse: collapse;
+        }
+
+        table td, th{
+            /* Cria linhas envolta da tabela */
+            border: 1px solid #000;
+        }
+
+        /* Vai mudar o fundo da tabela */
+        /* O odd vai fazer a primeira e terceira linha */
+        /* tbody tr:nth-child(odd){
+            background-color: blue;
+        } */
+        /* O odd vai fazer a segunda e quarta linha */
+        /* tbody tr:nth-child(even){
+            background-color: red;
+        } */
+
+        thead {
+            background-color: #9b9595;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #ff4b4b;
+            color: rgb(0, 0, 0);
+        }
+
+        .coluna1{
+            background-color: aqua;
+        }
+        .coluna2{
+            background-color:greenyellow;
+        }
+        .coluna4{
+            background-color:rgb(255, 174, 98);
+        }
+        .coluna5{
+            background-color:bisque;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <h1>Tabela Semantica</h1>
+        <table>
+            <!-- Título para tabela -->
+            <caption>Título</caption>
+
+            <colgroup>
+                <col class="coluna1">
+                <col class="coluna2">
+                <col><!-- Não quero alterar, então tenho que deixar um col vazio -->
+                <col class="coluna4">   
+                <col class="coluna5">      
+            </colgroup>
+
+            <!-- thead é para definir os títulos da tabela -->
+            <thead>
+
+            <!-- tr (table row) é uma linha da tabela -->
+            <tr>
+                <!-- th é uma celula de título dentro dessa linha -->
+                <th>País</th>
+                <th>Ouro</th>
+                <th>Prata</th>
+                <th>Bronze</th>
+                <th>Total</th>
+            </tr>
+             </thead>
+
+            <!-- Rodapé -->
+            <!-- Por mais que ele seja o último, é uma boa prática colocar o tfoot abaixo da head, isso não altera a exebição -->
+            <tfoot>
+                <tr>
+                    <td>Japan</td>
+                    <td>120</td>
+                    <td>90</td>
+                    <td>410</td>
+                    <td>620</td>
+                </tr>
+            </tfoot>
+
+            <!-- tbody é para definir o corpo da tabela -->
+            <tbody>
+                <tr>
+                    <td>Brazil</td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>300</td>
+                    <td>520</td>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>300</td>
+                    <td>520</td>
+                </tr>
+                <tr>
+                    <td>United Kingdon</td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>300</td>
+                    <td>520</td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td>100</td>
+                    <td>120</td>
+                    <td>300</td>
+                    <td>520</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

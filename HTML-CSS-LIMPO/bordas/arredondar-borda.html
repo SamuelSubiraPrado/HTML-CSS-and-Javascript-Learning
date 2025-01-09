@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arredondar bordas</title>
+    <style>
+      #caixa{
+        width: 500px;
+        height: 500px;
+        border: 2px solid blue;
+        /* Arredondar borda */
+        border-radius: 9px;
+         /*Também é possível arrendondar apenas um dos lados, ou qual quiser  */
+        /* border-radius: 9px 0 0 60px; */
+        
+      }
+
+      #caixa2{
+        width: 60px;
+        height: 60px;
+        border: 60px;
+        background-color: aqua;
+        border-radius: 100%;
+      }
+        
+    </style>
+</head>
+<body>
+
+    <div id="caixa">
+        <h1>BOX</h1>
+    </div>
+    
+    <div id="caixa2"></div>
+</body>
+</html>

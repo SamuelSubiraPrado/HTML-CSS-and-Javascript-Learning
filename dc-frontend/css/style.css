@@ -1,0 +1,504 @@
+/* Customização da scrollbar */
+html::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Fundo da scrollbar */
+html::-webkit-scrollbar-track {
+    background: #35adf2;
+    /*border-radius: 10px;*/
+}
+
+/* Polegar da scrollbar */
+html::-webkit-scrollbar-thumb {
+    background: #3792e8;
+    border-radius: 10px;
+}
+
+/* Polegar da scrollbar ao passar o mouse */
+html::-webkit-scrollbar-thumb:hover {
+    background: #0040ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+#home,
+#sobre,
+#galeria,
+#contato {
+    scroll-margin-top: 120px;
+}
+
+main {
+    /* margin-top: 60px; */
+    margin-top: 26px;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+    background: #6a95b7;
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid rgb(201, 205, 224);
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+    color: rgb(201, 205, 224);
+    text-decoration: none;
+
+
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    background: #1c75bc;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+
+
+header {
+    background-color: #000;
+    /* background-color: aquamarine; */
+    height: 90px;
+    line-height: 60px;
+    border-bottom: 4px solid #1c75bc;
+
+    padding: 15px 0;
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+header #logo img {
+    width: 20%;
+    /* padding: 20px 0; */
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+header nav a {
+    color: #ffffff;
+    /* color: #000; */
+}
+
+header nav a:hover {
+    color: #1c75bc;
+    border-bottom: #1c75bc solid 2px;
+    padding-bottom: 10px;
+}
+
+section {
+    margin: 80px 0;
+}
+
+
+
+#banner {
+    width: 100%;
+    height: 580px;
+    background-image: url('../img/banner.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#sobre i {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 0 0;
+    font-size: 30px;
+}
+
+
+
+.col-float-4 {
+    padding: 15px 20px;
+    width: 25%;
+    float: left;
+
+}
+
+.col-float-4 div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.col-float-4 h2 {
+    text-align: center;
+    padding: 15px;
+}
+
+.col-float-4 p {
+    text-align: justify;
+}
+
+.clear {
+    clear: both;
+}
+
+#galeria h2 {
+    text-align: center;
+}
+
+.col-flex {
+    display: flex;
+    flex-wrap: wrap;
+    /* Para permitir que itens quebrem linha se necessário */
+}
+
+/* Estilo das colunas */
+.flex-item {
+    flex: 1 1 25%;
+    /* flex-grow: 1; flex-shrink: 1; flex-basis: 25%; */
+    padding: 10px;
+    /*border: 1px solid #ccc;*/
+    /* Apenas para visualização */
+    display: flex;
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente dentro do item */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente dentro do item */
+}
+
+#aviso {
+    background: #1c75bc;
+    color: #fff;
+}
+
+#aviso .container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#aviso p {
+    text-align: center;
+}
+
+
+
+#contato .col-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+    margin-bottom: 60px;
+}
+
+#contato label {
+    font-size: 20px;
+    margin: 15px 0px 5px 0px;
+    width: 100%;
+    display: block;
+    padding-left: 15px;
+}
+
+#contato input {
+    width: 100%;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #757575;
+    border: 2px solid rgb(43, 70, 226);
+    border-radius: 25px;
+    height: 40px;
+
+}
+
+#contato select {
+    width: 100%;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #757575;
+    border: 2px solid rgb(43, 70, 226);
+    border-radius: 25px;
+    height: 40px;
+
+    appearance: none;
+    /* Remove a seta padrão */
+    -webkit-appearance: none;
+    /* Remove a seta padrão no Safari */
+    -moz-appearance: none;
+    /* Remove a seta padrão no Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ccc" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    /* Adiciona a seta personalizada */
+    background-repeat: no-repeat;
+    /* Não repetir a imagem de fundo */
+    background-position: right 10px center;
+    /* Posiciona a seta */
+}
+
+#contato select:focus {
+    border-color: #0077ff;
+    /* Altere essa cor para a desejada */
+    outline: none;
+    /* Remove o contorno padrão do navegador */
+}
+
+
+
+#contato textarea {
+    width: 100%;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    color: #757575;
+    border: 2px solid rgb(43, 70, 226);
+    border-radius: 25px;
+    height: 40px;
+    height: 150px;
+}
+
+#contato textarea:focus {
+    border-color: #0077ff;
+    /* Altere essa cor para a desejada */
+    outline: none;
+    /* Remove o contorno padrão do navegador */
+}
+
+#contato iframe {
+    width: 100%;
+    height: 400px;
+}
+
+#contato input[type="submit"] {
+    padding: 15px 20px !important;
+    border: 2px solid rgb(43, 70, 226);
+    border-radius: 25px;
+    text-transform: uppercase;
+    height: 57px;
+    font-size: 20px;
+    margin-top: 30px;
+    color: rgb(43, 70, 226) !important;
+    text-decoration: none;
+    background: #fff;
+    width: 30% !important;
+}
+
+#contato input[type="submit"]:hover {
+    background: rgb(43, 70, 226);
+    border: 2px solid #fff;
+    color: #fff !important;
+}
+
+#contato input:focus,
+#contato input:active {
+
+    border-color: #0077ff;
+    /* Altere essa cor para a desejada */
+    outline: none;
+    /* Remove o contorno padrão do navegador */
+
+}
+
+
+
+#contato h3 {
+    padding: 15px 0;
+}
+
+
+
+.redes p {
+    padding-bottom: 15px;
+}
+
+.redes a {
+    display: flex;
+    gap: 20px;
+    color: #000;
+}
+
+.redes a:hover {
+    display: flex;
+    gap: 20px;
+    color: rgb(43, 70, 226);
+}
+
+.redes i {
+    font-size: 22px;
+}
+
+
+#topo a {
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background: #1c75bc;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+
+    border-radius: 100%;
+
+    transition: transform 0.3s ease-in-out;
+    /* Transição suave */
+}
+
+#topo a:hover {
+    transform: scale(1.2);
+    /* Aumenta o tamanho do círculo */
+}
+
+footer {
+    background: black;
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* Para manter o layout responsivo */
+@media (max-width: 768px) {
+    .flex-item {
+        flex: 1 1 25%;
+        /* 2 colunas em telas menores */
+    }
+
+    #contato .col-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .col-float-4 {
+        padding: 15px 20px;
+        width: 50%;
+        float: left;
+
+    }
+
+    header {
+        height: 175px;
+    }
+
+    header .container {
+        display: block;
+    }
+
+    header #logo {
+
+        width: 100%;
+        display: block;
+        text-align: center;
+
+    }
+
+    header #logo img {
+        width: 17%;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    #topo{
+        display: none;
+    }
+}
+
+/* @media (max-width: 500px) {
+            header{
+                height: 175px;
+            }
+            header .container {
+                display: block;
+            }
+            header #logo{
+                
+    width: 100%;
+    display: block;
+    text-align: center;
+
+            }
+            header #logo img{
+                width: 17%;
+            }
+        } */
+
+@media (max-width: 425px) {
+    .flex-item {
+        flex: 1 1 100%;
+        /* 1 coluna em telas muito pequenas */
+    }
+
+    #contato .col-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .col-float-4 {
+        padding: 15px 20px;
+        width: 100%;
+        float: left;
+
+    }
+}

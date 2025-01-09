@@ -1,0 +1,168 @@
+:root{
+    /* Variaveis globais */
+    --primary-color_blue: #1c75bc;
+    --secundary-color_light_grey: hwb(0 92% 8%);
+    --primary_font_white-color: white;
+    --secundary_font_black-color: black;
+    --main_bg_color: #141414;
+    --border_radius: 15px;
+    --primary_shadow: rgba(224,224,224,0.2);
+    --secundary_shadow: #484848;
+} 
+
+*{
+    font-family: FonteProjeto;
+}
+
+@font-face
+{
+    font-family: FonteProjeto;
+    src: url(../../TelaPrincipal/assets/fonts/Kadwa-Regular.ttf);
+} 
+/* body */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main_bg_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+a, p, span, h1, h2, h3, ul, input {
+    color: var(--secundary_font_black-color);
+    text-decoration: none;
+    /* as letras ficaram meio grudadas com a fonte customizada ent espacei um pouco */
+    letter-spacing: 1px;
+}
+
+/* caixa branca */
+.login-container{
+    background-color: var(--secundary-color_light_grey);
+    padding: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 1.5rem;
+    border-radius: var(--border_radius);
+    box-shadow: 0px 0px 10px 10px var(--primary_shadow);
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid var(--secundary_font_black-color);
+}
+
+/* Titulo Login */
+.login-form h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+}
+
+/* Digite seus dados abaixo */
+.login-form p {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+}
+
+
+.login-form label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    
+}
+
+/* espaço entre os itens dentro da caixa branca */
+.login-form input {
+    width: 90%;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--secundary_font_black-color);
+    border-radius: var(--border_radius);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: var(--secundary-color_light_grey);
+}
+
+/* botão azul */
+.login-form button{
+    width: 60%;
+    padding: 0.75rem;
+    background-color: var(--primary-color_blue);
+    color: var(--primary_font_white-color);
+    border: none;
+    border-radius: var(--border_radius);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+
+    a{
+        color: var(--primary_font_white-color);
+    }
+    
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+    transition: 0.4s ease-in-out;
+}
+
+.login-form button:not(:hover) {
+    background-color: var(--primary-color_blue);
+    transition: 0.4s ease-in-out;
+}
+
+#esqueci_senha:hover{
+    color: var(--primary-color_blue);
+    transition: 0.4s ease-in-out;
+}
+
+#esqueci_senha:not(:hover){
+    color: var(--secundary_font_black-color);
+    transition: 0.4s ease-in-out;
+}
+
+/* responsivo */
+
+@media(max-width: 760px){
+    .login-container{ /* caixa branca */
+        
+        padding-top: 0px;
+        padding-bottom: 0;
+        
+        width: 50vw;
+
+    }
+    /* ------------------- */
+
+    /* Titulo Login */
+    .login-form h1{
+        text-align: center;
+        font-size: 1.25rem;
+        
+    }
+    /* ------------------- */
+
+    /* Esqueci minha senha */
+    .login-form a{
+        margin-bottom: 4rem;
+        
+    }
+    /* ------------------- */
+
+    /* Digite seus dados abaixo */
+    .login-form p{
+        margin-bottom: 1rem;
+    }
+    /* ------------------- */
+
+    /* botão azul */
+    .login-form button{
+        margin-left: 2.41rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    /* ------------------- */
+
+}

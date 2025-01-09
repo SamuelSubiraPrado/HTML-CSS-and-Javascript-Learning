@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        div{
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            /* nome que voce quiser  duração  comportamento*/
+            animation: meukeyframe     5s      infinite;
+            /* No comportamento o infinite faz com que a animação continue infinitamente */
+            position: relative;
+        }
+
+        @keyframes meukeyframe{
+            /* Essa porcentagem se refere ao tempo, ex: 50% do tempo(5s) = 2,5s */
+
+            0%{
+                background-color: rgb(202, 43, 226);
+                transform: rotate(0deg);
+                top: 0px;
+            }
+            25%{
+                background-color: rgb(83, 43, 226);
+                transform: rotate(90deg);
+                top: 25px;
+            }
+
+            50%{
+                background-color: rgb(43, 43, 226);
+                transform: rotate(180deg);
+                top: 50px;
+            }
+
+            75%{
+                background-color: rgb(43, 171, 226);
+                transform: rotate(270deg);
+                top: 75px;
+            }
+
+            100%{
+                background-color: rgb(43, 226, 217);
+                transform: rotate(360deg);
+                top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Regra keyframe</h1>
+
+    <div></div>
+</body>
+</html>
