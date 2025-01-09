@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+}
+
+fieldset{
+    margin: 10px;
+    width: 0%;
+}
+
+/* label,h1,h2,h3{
+    text-transform: ;
+} */
+
+main div{
+    display: flex;
+    flex-direction: column;
+}
+form div div{
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+}

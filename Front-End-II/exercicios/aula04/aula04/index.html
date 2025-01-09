@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moeda</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="container"> 
+        <header class="center">
+        <h1>Conversão de unidades</h1>
+        </header>
+
+        <div class="form_principal">
+            <div id="seletor">
+                <div>
+                    <b><label id="selecionarReal" class="uppercase"></label></b>
+                    <input type="radio" class="check-radio" name="selecionar" id="selecionarRealInput">
+                </div>
+                <div>
+                    <b><label id="selecionarDolar" class="uppercase"></label></b>
+                    <input type="radio" class="check-radio" name="selecionar" id="selecionarDolarInput">
+                </div>
+                <div>
+                    <b><Label id="infoCotacao" class="uppercase"></Label></b>
+                    <Label id="infoValorDolar"></Label>
+                </div>
+            </div>
+            <form action="">
+                <div class="flex-column gap">
+                    <b><Label id="digitarValor" class="uppercase"></Label></b>
+                    <input id="inputReal" type="number" placeholder="Digite o valor da moeda">
+                </div>
+                <div class="flex-column gap" id="div-resultado">
+                    <b><Label id="ValorResultante" class="uppercase"></Label></b>
+                    <Label id="resultado"></Label>
+                </div>
+                <div class="center flex-column" id="div-converter">
+                    <button id="btn-converterValores" type="button"></button>
+                </div>
+                    
+            </form>
+        </div>
+    </main>
+    <script src="assets/js/site.js"></script>
+</body>
+
+</html>

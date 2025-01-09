@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Unidades</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Uma aplicação para conversão de unidades comuns, como quilômetros para milhas,
+    Celsius para Fahrenheit, quilos para libras, entre outras.-->
+    <main>
+        <div  class=" container" id="main_div">
+            <h1>Conversor de unidades</h1>
+            <h3>Selecione o tipo de conversão</h3>
+            <select name="tipo_conversao" class="border_radius" id="tipo_conversao">
+                <div class="container" id="select-div">
+                    <option value="">Selecione</option>
+                    <option value="Km_Milha">Km - Milha</option>
+                    <option value="Celsius_Fahrenheit">Celsius - Fahrenheit</option>
+                    <option value="Kg_Libras">Kg - Libras</option>
+                    <!-- Criar mais conversões -->
+                </div>
+            </select>
+            <br>
+            <!-- Colocar lado a lado -->
+            <div id="div_inputs">
+                <div>
+                    <!-- Inserir texto pelo JavaScript de aocrdo com a seleção -->
+                    <label for="input_1" class="border_radius"></label>
+                    <input type="number" name="input_1" class="border_radius">
+                </div>
+                <div>
+                    <label for="input_2" class="border_radius"></label>
+                    <input type="number" name="input_2" class="border_radius">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

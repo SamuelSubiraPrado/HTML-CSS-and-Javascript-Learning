@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 80%;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+#div-principal{
+    width: 60vh;
+    height: 30vh;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: aqua;
+    padding-top: 40px;
+}
+
+#div-principal input, button, select{
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+    height: 30px;
+}
+
+button:hover{
+    background-color: cadetblue;
+}

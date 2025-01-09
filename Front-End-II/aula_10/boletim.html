@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/aula_10.css">
+    <title>Aula 10</title>
+</head>
+<body>
+    <label for="nome">Nome do Aluno</label>
+    <input type="text" name="nome" id="nome">
+
+    <label for="materia">Matéria do Aluno</label>
+    <select name="materia" id="materia">
+        <option value="Português">Português</option>
+        <option value="Matemática">Matemática</option>
+        <option value="Filosofia">Filosofia</option>
+        <option value="Sociologia">Sociologia</option>
+    </select>
+
+    <input type="text" name="bim1" id="bim1">
+    <input type="text" name="bim2" id="bim2">
+    <input type="text" name="bim3" id="bim3">
+    <input type="text" name="bim4" id="bim4">
+
+    <button id="btn-salvar">Salvar</button>
+
+    <table>
+        <h3 id="nome-titulo"></h3>
+        <tr>
+            <thead>
+                <td>Matéria</td>
+                <td>B1</td>
+                <td>B2</td>
+                <td>B3</td>
+                <td>B4</td>
+                <td>Média</td>
+            </thead>
+            <tbody id="tabela">
+
+            </tbody>
+        </tr>
+    </table>
+
+    <script src="assets/js/boletim.js"></script>
+</body>
+</html>

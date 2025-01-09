@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <main>
+    <h1>Aula 07 - Tarefa</h1>
+
+    <div>
+    <fieldset>
+        <legend>Cadastro de notas</legend>
+        
+            <div>
+                <div>
+                    <label for="nome" >Nome Completo</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="serie" >Série</label>
+                    <input type="text" name="serie" id="serie">
+                </div>
+                <div>
+                    <label for="materia" >Matéria</label>
+                    <select name="materia" id="materia">
+                        <option value="" selected disabled>Selecionar</option>
+                        <option value="">Matemática</option>
+                        <option value="">Português</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="nota1" >Bimestre 1</label>
+                    <input type="number" step="0.01" name="nota1" id="nota1">
+                </div>
+                <div>
+                    <label for="nota2" >Bimestre 2</label>
+                    <input type="number" step="0.01" name="nota2" id="nota2">
+                </div>
+                <div>
+                    <label for="nota3" >Bimestre 3</label>
+                    <input type="number" step="0.01" name="nota3" id="nota3">
+                </div>
+                <div>
+                    <label for="nota4" >Bimestre 4</label>
+                    <input type="number" step="0.01" name="nota4" id="nota4">
+                </div>
+                <div>
+                    <label for="media" >Media</label>
+                    <input type="number" step="0.01" disabled name="media" id="media">
+                </div>
+                <div>
+                    <button id="Calcular">Calcular</button>
+                </div>
+            </div>
+       
+    </fieldset>
+    <fieldset>
+        <legend>Relatório</legend>
+        <form action="">
+            <div>
+                <label for="Rnome" >Nome Completo</label>
+                <label for="Rserie" >Série</label>
+                <label for="Rmateria" >Matéria</label>
+                <label for="Rnota1" >Bimestre 1</label>
+                <label for="Rnota2" >Bimestre 2</label>
+                <label for="Rnota3" >Bimestre 3</label>
+                <label for="Rnota4" >Bimestre 4</label>
+                <label for="Rmedia" >Media</label>
+            </div>
+            <div>
+                <label id="Rnome" ></label>
+                <label id="Rserie" ></label>
+                <label id="Rmateria" ></label>
+                <label id="Rnota1" ></label>
+                <label id="Rnota2" ></label>
+                <label id="Rnota3" ></label>
+                <label id="Rnota4" ></label>
+                <label id="Rmedia" ></label>
+            </div>
+    </form>
+    <script src="assets/JS/aula07.js"></script>
+    </fieldset>
+</main>
+</body>
+</html>
